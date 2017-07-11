@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container" style="width:90%">
+        <div style="margin-top:10%;text-align:right"> <a href="home"> Back to Main page </a>   </div>
+        <div style="height:10px">  </div>
+        <!--<div class="well well-lg" style="margin-top:5%">
+            <div>          
+                <div style="display:inline-block;float:right;background-color:aqua">
+                    <a href="home">Back to main  </a>
+                </div>
+           </div>
+
+        </div>-->
+
+       
+
+        <div class="well">
+            List of inactive iPads:
+
+            <table class="table table-striped" style="font-size:smaller">
+                <thead>
+                    <tr>
+                        <th>iPad ID</th>
+                        <th>iPad SerialNo</th>
+                        <th>iPad Model</th>
+                        <th>Mobile No</th>
+                        <th>SIM SerialNo</th>
+                        <th>Company</th>
+                        <th>Start Date</th>
+                        <th>Last Sales Date</th>
+                        <th>Division</th>
+                        <th>Status</th>
+                        <th>Leased iPad</th>
+                        <th>Assigned to</th>
+                        <th>Assign to</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="inactive in inactives">
+                        <td> {{ inactive.iPadId }} </td>
+                        <td> {{ inactive.iPadSerialNo }} </td>
+                        <td> {{ inactive.iPadModel }} </td>
+                        <td> {{ inactive.MobileNo }} </td>
+                        <td> {{ inactive.SIMSerialNo }} </td>
+                        <td> {{ inactive.LocationName }} </td>
+                        <td> {{ inactive.EntranceDate | date :  "dd/MM/yyyy"}} </td>
+                        <td> {{ inactive.LastSalesDate | date :  "dd/MM/yyyy"}} </td>
+                        <td> {{ inactive.DivName }} </td>
+                        <td> {{ inactive.Status }} </td>
+                        <td> {{ inactive.IsInLease }} </td>
+                        <td> {{ inactive.Name }} </td>
+                        <td> <input id="Text1" type="text" style="display:inline-block" ng-model="inactive.Name" />  <input id="Button1" type="button" value="Save" style="display:inline-block" ng-click="InsertIC(inactive.iPadId, inactive.Name)" /></td>
+                        <!-- this one also works <td> <input id="Button1" type="button" value="Save" style="display:inline-block" ng-click="InsertIC(info.iPadId, Name1)" /> <input id="Text1" type="text" style="display:inline-block" ng-model="Name1" /> </td>-->
+                    </tr>
+                </tbody>
+            </table>
+
+
+          
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+

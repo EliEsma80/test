@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ipadsModelStoreContainer" CdmEntityContainer="ipadsEntities">
+    <FunctionImportMapping FunctionImportName="SpAllQandA" FunctionName="ipadsModel.Store.SpAllQandA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ipadsModel.SpAllQandA_Result">
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IsAnswered" ColumnName="IsAnswered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpAnsweredQ" FunctionName="ipadsModel.Store.SpAnsweredQ">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ipadsModel.SpAnsweredQ_Result">
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpAuthen" FunctionName="ipadsModel.Store.SpAuthen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ipadsModel.SpAuthen_Result">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpInactiveSerach" FunctionName="ipadsModel.Store.SpInactiveSerach">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ipadsModel.SpInactiveSerach_Result">
+          <ScalarProperty Name="iPadId" ColumnName="iPadId" />
+          <ScalarProperty Name="iPadSerialNo" ColumnName="iPadSerialNo" />
+          <ScalarProperty Name="iPadModel" ColumnName="iPadModel" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="SIMSerialNo" ColumnName="SIMSerialNo" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="EntranceDate" ColumnName="EntranceDate" />
+          <ScalarProperty Name="LastSalesDate" ColumnName="LastSalesDate" />
+          <ScalarProperty Name="DivName" ColumnName="DivName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsInLease" ColumnName="IsInLease" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpInsertIC" FunctionName="ipadsModel.Store.SpInsertIC" />
+    <FunctionImportMapping FunctionImportName="SpInsertQandA" FunctionName="ipadsModel.Store.SpInsertQandA" />
+    <FunctionImportMapping FunctionImportName="SpReportSearch" FunctionName="ipadsModel.Store.SpReportSearch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ipadsModel.SpReportSearch_Result">
+          <ScalarProperty Name="iPadId" ColumnName="iPadId" />
+          <ScalarProperty Name="iPadSerialNo" ColumnName="iPadSerialNo" />
+          <ScalarProperty Name="iPadModel" ColumnName="iPadModel" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="SIMSerialNo" ColumnName="SIMSerialNo" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="EntranceDate" ColumnName="EntranceDate" />
+          <ScalarProperty Name="LastSalesDate" ColumnName="LastSalesDate" />
+          <ScalarProperty Name="DivName" ColumnName="DivName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsInLease" ColumnName="IsInLease" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpSummary" FunctionName="ipadsModel.Store.SpSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ipadsModel.SpSummary_Result">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpUpdateQandA" FunctionName="ipadsModel.Store.SpUpdateQandA" />
+  </EntityContainerMapping>
+</Mapping>

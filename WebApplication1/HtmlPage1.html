@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+     <div class="container" style="width:90%">
+            <div class="well" style="margin-top:5%" >
+                <div >
+
+                    <div style="display:inline-block" >
+                       Hi {{FNme}}
+                    </div>
+                    <div style="display:inline-block">
+                      from {{MCme}}
+                    </div>
+                    <div style="display:inline-block;float:right;">
+                        <a href="login.html" target="_self">Logout</a>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div style="display:inline-block;float:right;">
+                        <a href="./Form2.html" target="_blank">Change iPad Status </a>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div  style="display:inline-block;float:right;">
+                        <a href="./Form.html" target="_blank">Request iPad  </a>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div style="display:inline-block;float:right;">
+                        <a href="inactives">Inactive iPads  </a>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div style="display:inline-block;float:right;">
+                        <a href="answered">FAQs  </a>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div style="display:inline-block;float:right;" ng-show="showme">
+                        <a href="qanda">Admin FAQs  </a>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+               
+            </div>
+
+         <div class="well">
+             Summary of iPads being used by Marketing company:
+
+             <table  style="width:40%">
+                 <thead>
+                     <tr>
+                         <th>Status</th>
+                         <th>Number</th>
+                         <th>Your Weekly Payment</th>
+                         
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr ng-repeat="sum in sums">
+                         <td> {{ sum.Status }} </td>
+                         <td> {{ sum.Number }} </td>
+                         <td> {{ sum.Payment }} </td>
+                        
+                     </tr>
+                 </tbody>
+             </table>
+                          
+         </div>
+
+            <div class="well">
+               List of iPads being used by Marketing company:
+               
+                <table class="table table-striped" style="font-size:smaller">
+                    <thead>
+                        <tr>
+                            <th>iPad ID</th>
+                            <th>iPad SerialNo</th>
+                            <th>iPad Model</th>
+                            <th>Mobile No</th>
+                            <th>SIM SerialNo</th>
+                            <th>Company</th>
+                            <th>Start Date</th>
+                            <th>Last Sales Date</th>
+                            <th>Division</th>
+                            <th>Status</th>
+                            <th>Leased iPad</th>
+                            <th>Assigned to</th>
+                            <th>Assign to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="info in infos">
+                            <td> {{ info.iPadId }} </td>
+                            <td> {{ info.iPadSerialNo }} </td>
+                            <td> {{ info.iPadModel }} </td>
+                            <td> {{ info.MobileNo }} </td>
+                            <td> {{ info.SIMSerialNo }} </td>
+                            <td> {{ info.LocationName }} </td>
+                            <td> {{ info.EntranceDate | date :  "dd/MM/yyyy"}} </td>
+                            <td> {{ info.LastSalesDate | date :  "dd/MM/yyyy"}} </td>
+                            <td> {{ info.DivName }} </td>
+                            <td> {{ info.Status }} </td>
+                            <td> {{ info.IsInLease }} </td>
+                            <td> {{ info.Name }} </td>
+                            <td> <input id="Text1" type="text" style="display:inline-block" ng-model="info.Name" />  <input id="Button1" type="button" value="Save" style="display:inline-block" ng-click="InsertIC(info.iPadId, info.Name)"/></td>
+                            <!-- this one also works <td> <input id="Button1" type="button" value="Save" style="display:inline-block" ng-click="InsertIC(info.iPadId, Name1)" /> <input id="Text1" type="text" style="display:inline-block" ng-model="Name1" /> </td>-->
+                        </tr>
+                    </tbody>
+                </table>
+               
+
+                <!--<table class="table">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Gender</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="info in infos">
+                            <td> {{ info.iPadSerialNo }} </td>
+                            <td> {{ info.MobileNo }} </td>
+                            <td> {{ info.SIMSerialNo }} </td>
+                            <td> {{ info.VodafoneUserName }} </td>
+                        </tr>
+                    </tbody>
+                </table>-->
+
+            </div>
+     </div>
+
+</body>
+</html>
+

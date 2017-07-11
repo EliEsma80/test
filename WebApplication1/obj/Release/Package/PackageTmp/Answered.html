@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container" style="width:90%">
+        <div style="margin-top:3%;text-align:right"> <a href="home"> Back to Main page </a>   </div>
+        <div style="height:10px">  </div>
+      
+
+        <div class="well">
+            FAQs:
+
+            <table class="table table-striped" style="font-size:smaller">
+                <thead>
+                    <tr>
+                        <th>Question:</th>
+                        <th>Answer:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="qa in qas">
+                        <td> {{ qa.Question }} </td>
+                        <td> {{ qa.Answer }} </td>  
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="well" style="margin-top:5%">
+                       
+                Ask a new question:
+           
+             <div>
+                <br>
+                <div style="display:inline-block">
+                  
+                    <textarea name="Text1" cols="40" rows="5" style="width:600px" ng-model="NewQ"></textarea>
+                </div>
+                              
+                 <div>
+                     <input id="Button1" type="button" value="Send the Question"  ng-click="InsertNewQ()" />
+                 </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

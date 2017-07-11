@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\aesmailzadeh\Desktop\bd</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="angular-route.min.js">
+      <publishTime>02/15/2017 15:28:39</publishTime>
+    </File>
+    <File Include="angular.min.js">
+      <publishTime>02/15/2017 13:10:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 18:43:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/03/2015 18:43:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 05:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 05:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 05:03:46</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.dll">
+      <publishTime>05/05/2017 11:03:34</publishTime>
+    </File>
+    <File Include="Form.html">
+      <publishTime>04/11/2017 15:30:22</publishTime>
+    </File>
+    <File Include="Form2.html">
+      <publishTime>05/04/2017 10:00:18</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/07/2017 09:13:11</publishTime>
+    </File>
+    <File Include="HtmlPage1.html">
+      <publishTime>05/04/2017 13:45:29</publishTime>
+    </File>
+    <File Include="inactives.html">
+      <publishTime>05/05/2017 10:13:10</publishTime>
+    </File>
+    <File Include="JavaScript.js">
+      <publishTime>05/04/2017 15:42:20</publishTime>
+    </File>
+    <File Include="jquery-3.1.1.min.js">
+      <publishTime>12/01/2016 12:40:30</publishTime>
+    </File>
+    <File Include="login.html">
+      <publishTime>03/23/2017 15:04:28</publishTime>
+    </File>
+    <File Include="Model1.edmx.diagram">
+      <publishTime>05/04/2017 14:23:54</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/07/2017 10:19:03</publishTime>
+    </File>
+    <File Include="Page1.html">
+      <publishTime>05/04/2017 12:22:59</publishTime>
+    </File>
+    <File Include="Page3.html">
+      <publishTime>05/04/2017 12:25:09</publishTime>
+    </File>
+    <File Include="Photos/Others/ErrorPage.aspx">
+      <publishTime>12/06/2016 11:16:49</publishTime>
+    </File>
+    <File Include="Photos/Others/LogInError.aspx">
+      <publishTime>12/07/2016 13:04:16</publishTime>
+    </File>
+    <File Include="Photos/Others/Untitled.PNG">
+      <publishTime>12/14/2016 15:13:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/05/2017 11:03:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

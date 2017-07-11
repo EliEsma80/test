@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+        <body>
+
+            <div ng-app="myApp" ng-controller="formCtrl">
+
+                <div style="margin-left:9%">
+                    <br />
+                    <img alt="" src="./Photos/Others/Untitled.png" />
+                    <br />
+                    <br />
+                </div>
+                <div style="height:20px;">
+
+                </div>
+
+
+            <div style="margin-left:10%">
+                <div>
+                    User Name: <input type="text" style="width:290px"  ng-model="firstname">
+                </div>
+               
+                    <div>
+                        <br />
+                    </div>
+                 <div style="display:inline-block">
+                    Password: <input type="password"  style="width:300px" ng-model="lastname">
+                 </div>
+                 <div style="display:inline-block">
+                    <input id="Button1" type="button" value="Login" ng-click="login()" onclick="return meReject()" />
+                 </div>
+                 <div>
+                    <br />
+                    <br />
+                 </div>
+                <div>
+                    Welcome to Appco iPad Portal!
+                </div>
+
+            </div>
+                                      
+                 <div id="pls" style="visibility:hidden;margin-left:46%;margin-top:10%;font-size:xx-large" ng-hide="hideme"> Please wait ...</div>
+
+          </div>
+
+           
+            <script type="text/javascript" language="javascript">
+
+
+                function meReject() {
+                                        
+                        document.getElementById('pls').style.visibility = 'visible';
+                        return true;
+                     }
+
+            </script>
+        </body>
+</html>

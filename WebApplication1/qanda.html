@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container" style="width:90%">
+        <div style="margin-top:3%;text-align:right"> <a href="home"> Back to Main page </a>   </div>
+        <div style="height:10px">  </div>
+      
+                
+        <div class="well">
+            FAQs:
+
+            <table class="table table-striped" style="font-size:smaller">
+                <thead>
+                    <tr>
+                        <th>Record ID</th>
+                        <th>Question</th>
+                        <th>Answer</th>
+                        <th>Date</th>
+                        <th>Is Answered</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="qanda in qandas">
+                        <td> {{ qanda.RecId }} </td>
+                        <td style="word-wrap:break-word;max-width:300px"> {{ qanda.Question }} </td>
+                        <td style="word-wrap:break-word;max-width:300px"> {{ qanda.Answer }} </td>
+                        <td> {{ qanda.Date | date :  "dd/MM/yyyy"}} </td>
+                        <td> {{ qanda.IsAnswered }} </td>
+
+                        <td> 
+                                                            
+                                <div style="display:inline-block">
+                                    <textarea name="Text1" cols="40" rows="3" style="width:400px" ng-model="qanda.Answer"></textarea>
+                                </div>
+
+                                <div style="display:inline-block;position:absolute;margin-left:10px">
+                                    <input id="Button1" type="button" value="Save Answer" ng-click="UpdateA(qanda.RecId, qanda.Answer)" />
+                                </div>
+                                                                            
+                        </td>
+                                               
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+       
+
+    </div>
+
+</body>
+</html>
+
+
+
